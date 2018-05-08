@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +51,4101 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avndb\a1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\a1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\a1_2_vse.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AbitRecom.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AbitRecom_podtver.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AbitRecom_zachisl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AbitRecom_zachisl_pivot.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abiturient.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AbiturientPhoto.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AbiturientTest.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_7.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_disp_report.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_find.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_Log.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ABIT_PROVERKA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_ranj_lgotnik.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_ranj_sel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_razryd.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_razryd_sport.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_smi.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_sostav_priem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_spec_disp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_svod_kateg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_svod_kateg2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_svod_kateg_kontr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_svod_kateg_PLAN.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_temp_direction.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\abit_temp_plan.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_test_view.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abit_web.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Abroad.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ab_fio.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Ab_InfoOnEdIns.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Ab_InfoSchool.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Ab_MilitaryInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Ab_ParentsInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Action.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Admin_good_onlinepayment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Admin_KyrgazstanBank_Unhandled_List.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Admin_temp_online_payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\akad_grafik.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\analiz_1m.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Ankenirovanie_RS_tfio_R.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Ankentirovanie4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_Da.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_kol_ball.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_MM.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_net.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_Questions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_RA_Full.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_RS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_RS2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_RS_kaf.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovanie_RS_vuz.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anketirovarie_Kol_Full.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\anket_kaf1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anket_Questionnaires.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anket_Questions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Anket_RRNK_kaf.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ank_fak.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ank_fak_gr_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Antekirovanie_RS_kafedra.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Auditoriums.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\aud_discip_rasp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Aud_rastoynie.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Aurochs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AvnDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvnDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AvnDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AvnDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvnDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNLOG_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNLOG_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNLOG_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNLOG_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNLOG_B_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNStudent.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNTeacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNtest_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNtest_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNtest_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVNtest_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Log.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Progs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Progs_Info.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Prog_List.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_reports.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_report_role.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_rep_user.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Security.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_svyazi.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Test_category.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Test_samoozenka.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_TEST_SREZ.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_TEST_TestResult.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Test_type.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_Test_vopros.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_User.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_User_Deleted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_User_View.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AVN_User_Visible.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AZ_AttandanceDiagramma.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AZ_DOPUSK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AZ_mobileDisiplineForStudent.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AZ_mobileTeacherAttandance.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\AZ_sum_KREDIT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\a_attandanceGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\a_disiplinForStudentAttandance.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\a_year.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\a_year_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bank_akt_sverka.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bank_akt_sverka3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Bank_payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bank_payment_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bank_payment_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\base.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_11.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_1_new.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_2l.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_2_old.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bf_1_3l.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\bk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\BriefDisciplineInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Bronya.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\b_temp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C11.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C1111111111.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C123.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\CallEducationInst.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Category.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ch1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ch2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ch3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ch4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Citizenship.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\CityKR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\come.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\component.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\com_gspe.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\com_kt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\com_sfe.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\com_ygr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\control.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ControlRating.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ControlRating_aud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ControlRating_disc.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ControlRating_gr_f.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\con_user.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\CorrT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\country.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C__s_g_mirror.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C__ZS_EDUCSH.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C__ZS_mark_mag.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C__Z_USPEV_UC.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C___Directions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\C___T_TempSerachBookFiles.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DatabaseVersion.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DATE_reg_DFS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Day.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Debts.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\deduce.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Def_Uslug.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_DisciplineForStudent.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_Educ_sh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_Mark_Mag.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DEL_mark_mag_arch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_movement_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\del_null_rrnk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_RRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Del_RRNKkrdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Department.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Diploma_kval.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Dipl_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DIPL_PRIX.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\direction.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\disc.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\discipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\disciplineForGos.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DisciplineForStudent.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DisciplineForStudent2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DisciplineForStudentDeleted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DisciplineForStudentForVidZaniatiy.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\disciplineForZashita.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\discipline_type.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\disc_n_sv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\DistrictKR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\dopolnitelno.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\dtproperties.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\duty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\dv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\dva.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\dva_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\dva_ps.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\D_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ebe.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ebe_detal.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Edu.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Educ.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\educ_form.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\educ_sh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\educ_sh_kpv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Educ_sh_sel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Educ_sh_with_kpv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Educ_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ed_sh_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ee.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Elect_org.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\end_semestr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\enter.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\est1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\est2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\est3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\est4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\estimation.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\EstimationOther.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\est_config.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\examination.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\expense.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\expen_rate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\expen_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Experience.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Experience_type_job.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\exp_dipl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f10_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f10_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f12_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f12_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f12_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f12_2_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f12_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_1_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_2_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_2_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_2_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_2_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_2_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_3_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_3_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_3_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_3_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f13_3_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f14_1_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_1_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_2_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_2_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_2_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_2_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_2_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_3_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_3_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_3_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_3_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_3_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_4_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_4_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_4_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_4_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_4_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_4_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_5_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_5_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_5_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_5_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_6_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_6_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f15_6_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f16_1_4_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f17_1_4_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f18_1_4_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f19_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_1sel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_3sel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_4a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_4sel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f1_6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f20_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f26_1_0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f28_gruppa.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f28_years.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_1_6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_2_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_2_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_2_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_3_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_3_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f3_3_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_b8.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_d6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_d68.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_dolg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_dva.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_odin.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f8_3_tri.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f9_2_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\faculty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Faculty_V.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\family.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\family_.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Family_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Family_spec.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\finish.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\fio_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ForElectrVedomost.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\formAction.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\FormOfStydy.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_arch_marg_mag.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_avn6_kol_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_kass.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_kass_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_test.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_test_all.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\for_test_povtor.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\foto_1kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\foto_2kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\foto_3kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\foto_4kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\foto_5kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\foto_6kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_4b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_disc.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_disc_base.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_exam.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_exam_base.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_gr_potok.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_gr_potok_base.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_AVN28_sem_base.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_educ.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_educ_vid.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\f_est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\F_FIO.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\F_lms_Semesters.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\F_lms_Years.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GAK_member_history.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GAK_member_speciality.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GetMinMaxBalForEstimation.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GPA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GroupNotInRRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GroupPlan.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\groups.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\GroupsByYear.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Groups_payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group_form.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Group_kol_yaer.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group_reports.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group_slushatel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group_y.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\group_yyy.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\gr_sem_disc_exam.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\gr_sem_disc_exam1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\gr_sem_disc_exam_bk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\gr_st_kol_dolg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\gr_st_view.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\gr_year_spec_oz_fac.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_f.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_r.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_r_y.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_s_sem_disc_exam.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\g_s_sem_disc_exam_v.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\HighQualification.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Holiday.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Holliday_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\hor.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\hor_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\hor_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IncorrT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IndividualModulPermiss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IndividualModulPermissByFuckulty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IndividualModulPermissBySpeciality.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IndividualModulPermissGROUP.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IndividualModulPermissPotok.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\IndividualModulPermissPotok_group.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ind_ved_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ind_ved_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ind_ved_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ind_ved_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ind_ved_ar.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\InfoForRating.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\InfoOnEdIns.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\InfoOnTesting.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\InfoSchool.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\JOB_mov_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\JOB_mov_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kafedra.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kafLogins.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\KafSecurity.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kaf_dis.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\KasFak.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Kassa.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kassa_ee.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kassa_opl_kredL.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kassa_pp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kassa_p_ab.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_ab.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_e.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_opl_kred.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_opl_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_p.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kass_pe.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kinds.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_all_b_k.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_bk_j.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_all.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_all_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_all_b_KPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_all_KPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_bk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_gr_k.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_j.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_subgr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kol_st_subgroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\komul_GPA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\korpus.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kor_mov_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kor_mov_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\KPV_Educ_sh_inf.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Kredit_fakulty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Kvalifikation.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\kv_job.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\k_st_gr_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\l4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Language.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\languages.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Language_options.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\leave.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Level.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Library_dolg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Library_dolg_LOG.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Licence.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\lms_gr_sem_disc_exam.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Lookup_S_FIO_Abit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Lookup_S_FIO_Payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Lookup_S_FIO_Payment_old.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Lookup_S_FIO_slushatel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\m1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mark_mag.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mark_mag_arch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mark_mag_est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mark_mag_maxest_arch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mark_mag_u.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Member_type.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MilitaryInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mil_card.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mil_card_.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Mil_name.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Mil_R_Voisk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Mil_valid.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ministerstvo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mmPayment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_kor_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_kor_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_kor_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_kor_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_kor_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mm_user.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileContactBack.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileProblem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileRaport.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileRaportDetail.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileStudentAdmission.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileStudentAdmissionForReport.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileStudentAnnounceDays.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileStudentDolg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileStudentDuty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MobileToken.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Modul.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ModulPermiss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\modul_info.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\movement.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MovementDop.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MovementView.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\movement_slushatel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\movement_spets.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\movement_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\movement_t_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\movement_t_k.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_beg_giv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_beg_ret.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_e_sh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_mm_edsh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_ved_giv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_ved_ind.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_ved_ind_ret.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_ved_ret.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\mov_ws.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\MVD_Pasport.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nagrada.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Nagruzka_godovaya.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\name_and_surname_of_students.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Nationality.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nb.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nb_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nedeli.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nedeli_shedule.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_1_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_2_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_3_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\neud_ps.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\not_est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_a_lb.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_a_pr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_ins_kol_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_ins_rrnkkrdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_ins_rrnkkrdt_lb.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_ins_rrnkkrdt_pr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_kol_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_UP.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_UP_lb.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nr_UP_pr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\nu.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\n_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ObemChasov.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\obrazovanie_teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_c7.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_g_r.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_l2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_l3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_l4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_l5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_l6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_l7.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_c7.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_j.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_l2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_l3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_l4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_l5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_l6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oks_s_l7.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ok_f20_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ok_f20_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ok_f20_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ok_f20_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ok_f20_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ok_f20_6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oplata.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\oplata_smeta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\opl_diplom.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Organization.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Organization_member.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Otchis_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Otchis_s_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Otdel_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\otl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\otl_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\otl_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\p1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\p2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\p3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ParentsInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Partiya.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\passport.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Payment1V.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Payment2V.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Payment3V.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\PaymentForAbit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\PaymentTransfer_Virtual.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_educ.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_educ_leta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_exp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_group.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_gr_con.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_no_exp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_plus_exp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_with_exp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pay_with_exp_leta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Pensioners.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Permissions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Photo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Place_leave.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Place_of_birth.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Place_of_residence.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\PlanAbitForAbiturient.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\plan_abit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Plan_AbitV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\PlaseSertORT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\PlaseSetrORT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\plus_exp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\plus_expen_no.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\plus_expen_rate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pol.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\poseshal.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Posrekvezit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\post.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Prerekvezit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Prikaz_come.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\prikaz_come_slushatel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Prikaz_leave.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\prikaz_leave_slushatel.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\prob4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Progs_Permiss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Prog_Security.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ps.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Publication.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\PublicationType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pvp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pvp_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\pvp_ps.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\p_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\p_s1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Qualification.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Quit_Course.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Raboty_sprav.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Rang.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rashod.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_1_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_1_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_2_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_2_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_napravlenie.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RASP_RRNKkrdt_and_RRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_student_SH.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rasp_teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RatingView.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\read.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ReceptInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RegionKR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\reit_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Renuw_UC.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Republics.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Result_of_the_test.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr2_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr2_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr3_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr3_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr4_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr4_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr5_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr5_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr5_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr5_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr6_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNKCalc.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNKDop.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNKForIndividualPermiss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNKkrdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNKkrdt_proverka.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnkPermiss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_a2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_aa.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_aaa.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_aa_table.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_aa_table__.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_DiscForStud_KPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNK_doljnost.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_elements.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_elements_old.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_fakt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_for_lk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_for_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_f_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_f_1_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_group_plan_stud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_group_plan_stud1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rrnk_group_plan_stud_KPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNK_gr_kolst.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNK_krdt_kolst.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNK_pps.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\RRNK_Schedule.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_a_bk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_a_k.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_a_rrnk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_c_b_RRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_k_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_k_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rr_k_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\rss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\R_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\R_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\R_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\R_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\R_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_chek_nagr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_krdt_kol_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_nagr_all.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_nagr_krdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_nagr_rrnk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_sheduller.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_ss.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\r_UP_kaf.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHDayOffAuditories.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHDayOffEmployees.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHDayOffGroups.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHDirectionList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHEducationFormList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ScheduleAdditionalGroups.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHEmployeeList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHGroupByRateList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHGroupList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SchoolDiscipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSchedule.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHScheduleGroups.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHScheduleList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHScheduleList_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHScheduleList_old.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSchedule_discipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSchedule_discipline1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSchedule_discp_pasp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSpecialityList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHStudyPlanList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHStudyPlanList_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHStudyPlanList_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHStudyType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSubjectList.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHSubjectShortName.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SCHWeekDay.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ScientificActivity.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SelDesciplineForKPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SelIdvil.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\semester.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SemestrShcedule.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sem_min.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sharp_temp_t1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Shcedule.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\shet.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\shetchik_avn10_report.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SingleTeacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_a_BudgetContract.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Smeta_date.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_expen.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_expense.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_o.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_oplata.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_pay.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_pay_exp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_pay_expen.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_rate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Smeta_spec.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\smeta_y.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SMS_duty_discipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SMS_duty_pay.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SMS_m1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SMS_m2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Soc_pr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\special.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\specialityRR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\specialityV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\speciality_form.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\specialOKT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Specifics.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Spec_Code.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Spravka.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SQL_User.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_faculty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_groups.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_groups_student.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_groups_students_prep.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_kaf_teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_student.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_student_discipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SRS_v_teachersDiscipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\st1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StandardOfEducation.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Stavka.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\STKGTU.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Streamgroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StreamType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\structure.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Student.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StudentPhoto.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StudentsGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Student_info_View.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Student_ItnGyrg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\student_live.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Student_ORT_balls.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Student_Po_id_Group.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Student_Propiska.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StudLang.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StudyCemester.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\StudyYear.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ST_23.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\st_bk_b_k.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\st_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\st_sp_g.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_aa.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_ar.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_a_NEW.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_a_old.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_a_u.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_bb.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sv_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\SV_proced1_temp_t1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\sysdiagrams.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_citizenship.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_fio.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_fio_birth.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\S_G.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_g_old.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\S_G_opt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_g_r.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_g_SYS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_spets_y.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\s_working.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teacher_info.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teacher_medosmotr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teacher_skills.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teacher_stepen.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teacher_struktura.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\teemp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempBK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempDFS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempDFS_NOT_RRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempEBE.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempEBEarch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempF.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempFarch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempMM_NOT_EDSH_DFS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temppp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temppp_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempq.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempTRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempttt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempY.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\tempYarch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_13.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_aannkk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TEMP_ABIT_ORT.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_Ainura.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ALL.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Temp_ALL_est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ALL_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_an2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ank.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ank_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ank_kol_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ank_reg_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ank_sdal.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_arch_clean.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_arch_dubl_clean_del.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_b1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_bektur.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TEMP_COPYEST.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_copy_est_from_ebe.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_copy_summ_for_ball.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_c_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_del_date.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_del_paym.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_dop_prim_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_dop_prim_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_ed_sh_kpv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_EST_nagr_reg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_field_studetnt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_FIKSIR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_for_rasp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_GROUP_ED_SH.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_kpv_educ_sh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_log.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_log2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_log_upd.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_markmagSH.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_max_leave_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TEMP_MINMAX_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_mm.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_mm_archSH.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_MM_dubl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_movement_t.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_nagr_reg.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_net_nagr_fix_O.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_net_nagr_reg_O.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_NEW_GROUP.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_nur.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_online_payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_osenTK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_payment_rate_update.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_pay_error.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_prob.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_rasp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_rasp2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Temp_rasp_error.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_r_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_r_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_r_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_r_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TEMP_SMETA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_SV_proced1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_test.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_trnk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_tr_BK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_tr_EBE.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_tr_F.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_tr_Y.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_tt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TEMP_UC.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_View_9.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\temp_vrem_kontingent_stud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\testtable.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\test_DFS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Time_.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Tmp_special.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ToolTable.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\trnk_kurs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\trnk_rs_naz.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Trudoem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ttt_del.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TypeChasov.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TypeControl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TypeHour.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\TypeScholl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AliveCreditSmeta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AliveExpense.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AliveMovement.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AliveMovement_temp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AlivePayment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AlivePaymentTransfer.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AliveSmeta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_AvnLog.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Banks.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_BaseBookCategories.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_BlockUmk.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_BookCategories.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Books.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_ComEbeFEst.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Contragents.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Countries.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_CreditRate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_CreditSmeta.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_CreditSmetaBudgetContract.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_DisciplineForStudentPermissions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_DynUrl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_EBooks.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_EmisHumanTemp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_EventMessages.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Exceptions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_FileType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_fio.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_HistoryEmailToStudents.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_HumanType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Institutions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Languages.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_LogActions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_LogMarkMag.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_ManagerAccessByCourse.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_MarkMagModulCopyAccess.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Message.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_MessageDetails.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_MessageFiles.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_MessagesForFaculty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_nag_sh_lb_update.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_nag_sh_lk_RRNK_new_LB_potok.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_nag_sh_lk_RRNK_new_LK_potok.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_nag_sh_lk_RRNK_new_PR_potok.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_nag_sh_lk_update.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_nag_sh_pr_update.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentAccountType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentCheckCommandLog.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentPreparedAccount.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentStream.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentStreamAction.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentStreamCanceled.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentStreamTemp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_OnlinePaymentStreamUndoCanceled.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_PaymentFacultyRates.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_PermittedFacultyForOnlinePayment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_ResidentSettlings.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_rrnkdop_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_rrnkkrdt_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_rrnkkrdt_aa.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_rrnk_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_saved_balance.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_saved_balanceSummer.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_ScheduleForDepartment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Schedule_AdditionalGroupForDepartment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SchoolChildren.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SchoolClasses.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SchoolTeachers.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsAccountRegistartor.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsActionLog.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsActions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsDateAutoSend.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsDateAutoSendHandled.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsMessages.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsShifrPaymentHandled.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsTempActions.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsVuzRegistratorForAbiturients.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_SmsVuzRegistratorForStudents.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_StudentDiscount.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_StudentJournalVisit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_StudentUploadFileTasksSchedule.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_StudyAgreements.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\t_s_fio.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TeacherUmkTypeVisibility.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempCreditRate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempDisciplineForStudentDeleted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempDisciplineForStudentInserted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempEducShDeleted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempEducShInserted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempEducShUpdated.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempMarkMagInserted.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempMovementFromArchive.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempMovementToArchive.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_TempPayment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_UmkType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_Universities.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_UserType.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\T_UserUniversity.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uchk_d.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uchk_ds.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uchk_d_kpv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uchk_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uch_kart.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uch_step.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uch_zvanie.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ud_os.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\University.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\user.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\user_come.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\User_ebe_var.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\user_faculty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\User_f_educ.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\User_f_est.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\User_Kafedra.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\user_leave.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\user_ok.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\usluga_rashod.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\uslugi.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Vakansii.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VarEstimationInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\var_sum.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vedomost_akadem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ved_pps_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vid_zaniatiy.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_4.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_5.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_6.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_7.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_8.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\View_9.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VillageKR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vipuskniki.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VisibleCallEduc.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VisibleRecTable.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Visitings.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\visyat1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\visyat2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vit_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vit_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vit_3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VKafedraForKPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Vostonov_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VOSTON_BA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VSelForKPV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\vuz.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VuzDefaults.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VV_Questionnaires.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VV_RespondentAnsvers.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\VV_Respondents.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Vyz.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Vyz_.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_abit_oplata.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_admin_online_payment_canceled_check.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ank.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anket1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anketirovanie.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anketirovanie3.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anket_Respondent.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anket_vsego_ank.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anket_vsego_registrazi.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anket_vsego_st_movment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_anket_vsego_zdali_displ.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ank_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ank_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ank_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ank_da_net.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ank_kol_num.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_Auditory.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_citizenshYearKontraktGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Date_reg_DFS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_docs.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_EdocDocNatureName.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Educ_sh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_educ_sh_del_RRNKkrdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Educ_sh_RRNK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_edush.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_FXByFaculty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_FXDistinct.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_FXDistinctByFaculty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_FX_Full.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_groups.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_IndividualModulPermissPotok_group_discipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Jurnal.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Jurnal_chasi.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Jurnal_dis.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Jurnal_visit.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Jurnal_visit_dis.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Jurnal_visit_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_kaf_teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_KPV_Info.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_KPV_Info_2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_LMS_SMS_spets.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Login.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ManagerFacultyForStudents.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_ManagerKafedraForTeachers.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_MarkMag_user.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_mark_mag_arch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_mark_mag_isprav1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_MM_GPA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_MM_GPA_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_mm_max.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_mm_max_ekv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_mm_max_teacher.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Movement_MaxRate_OfGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Movement_MaxRate_Students.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Movement_MaxRate_StudentsOfGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_MYFIND.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_NewEdoc_RS1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_NewEdoc_RS2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_opl.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_oplana_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_payment.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_PaymentTransferVirtual.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_podrazd_RSlib.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Raspisanie_new.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RASPISANIE_STUD.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RASPISANIE_typeRrnk0.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RRNKCrdt_MARK_MAG.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RRNKkrdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RRNKkrdt_disipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RRNK_MARK_MAG.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RRNK_plan.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_RrrnkTeacherFaculties.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_SCHSchedule_discp_pasp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_SCHShedule_Error_aud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_SG_Citizenship_fakylty.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_SmetaForGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_smeta_spec.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_special_rate.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_StreamGroup.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_teachersDiscipline.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_teachersFIO.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_Test_samoozenka.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_time.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_UMK_spets.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V_UserInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\v_zanyatii.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\V__EDUC_SH.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Wbr_Rooms.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Wbr_Students.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Wbr_Teachers.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Work.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Working.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ws_sem.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\www.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\www1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\www_books.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\www_dv.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\w_s.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\zanyat.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Zoomo_VIEW.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ZS_REG.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ZS_stud_ws.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\ZS_SV1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_ab_infoOnEdIns.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_AKADEM.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_DEL_Faculty_NULL.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_Faculty_Null.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_LMS_SMS_KR.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_mm_gr_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_mm_with_arch.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_nauka1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_DFS.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_matrix.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_obyas.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_obyas_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_obyas_a_kaf.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_obyas_a_RRNKkrdt.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_y.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_yacheika.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_yacheika2.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_yacheika_1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_yacheika_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_rasp_yacheika_a_new.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_ReceptInfo.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SHEDULER.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SHEDULER_new.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_Sheduler_RRNKkrdt_y_rasp.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SHEDULER_TEACHER.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SV1.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SV1_NEW_OLD.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SV1_OLD.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SV_F83_dis.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SV_F83_ots.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_SV_F83_stud.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_transcriptA.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_transcriptA___BK.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_uchpl_NEW_gr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_a.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_a_isstatFalse.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_a_isstatTrue.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b_edsh.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b_edsh_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b_registr.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b_registr_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b_static.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_b_static_st.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_c.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_c_False.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_GE.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_GE_oldd.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_OLD.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_UC_A.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Avndb\Z_USPEV_UC_B.cs">
+      <DependentUpon>AvnDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleDB\AspNetRole.cs" />
+    <Compile Include="ScheduleDB\AspNetRoles.cs" />
+    <Compile Include="ScheduleDB\AspNetUser.cs" />
+    <Compile Include="ScheduleDB\AspNetUserClaim.cs" />
+    <Compile Include="ScheduleDB\AspNetUserClaims.cs" />
+    <Compile Include="ScheduleDB\AspNetUserLogin.cs" />
+    <Compile Include="ScheduleDB\AspNetUserLogins.cs" />
+    <Compile Include="ScheduleDB\AspNetUsers.cs" />
+    <Compile Include="ScheduleDB\Auditorium.cs" />
+    <Compile Include="ScheduleDB\AuditoriumType.cs" />
+    <Compile Include="ScheduleDB\Building.cs" />
+    <Compile Include="ScheduleDB\Course.cs" />
+    <Compile Include="ScheduleDB\CourseGroup.cs" />
+    <Compile Include="ScheduleDB\C__MigrationHistory.cs" />
+    <Compile Include="ScheduleDB\DayOfWeek.cs" />
+    <Compile Include="ScheduleDB\Department.cs" />
+    <Compile Include="ScheduleDB\Faculty.cs" />
+    <Compile Include="ScheduleDB\Group.cs" />
+    <Compile Include="ScheduleDB\Hour.cs" />
+    <Compile Include="ScheduleDB\Raschasovka.cs" />
+    <Compile Include="ScheduleDB\RaschasovkaWeek.cs" />
+    <Compile Include="ScheduleDB\RaschasovkaWeeks.cs" />
+    <Compile Include="ScheduleDB\Schedule.cs" />
+    <Compile Include="ScheduleDB\ScheduleDBContext.cs" />
+    <Compile Include="ScheduleDB\ScheduleRealization.cs" />
+    <Compile Include="ScheduleDB\semester.cs" />
+    <Compile Include="ScheduleDB\Semesters.cs" />
+    <Compile Include="ScheduleDB\Subject.cs" />
+    <Compile Include="ScheduleDB\SubjectType.cs" />
+    <Compile Include="ScheduleDB\SubjectWithType.cs" />
+    <Compile Include="ScheduleDB\sysdiagram.cs" />
+    <Compile Include="ScheduleDB\sysdiagrams.cs" />
+    <Compile Include="ScheduleDB\Teacher.cs" />
+    <Compile Include="ScheduleDB\TeacherDepartment.cs" />
+    <Compile Include="ScheduleDB\TeacherPersonalTime.cs" />
+    <Compile Include="ScheduleDB\Week.cs" />
+    <Compile Include="ScheduleDB\Year.cs" />
+    <Compile Include="ScheduleDB\Years.cs" />
+    <Compile Include="Service\AuditoriumService.cs" />
+    <Compile Include="Service\AuditoriumTypeServise.cs" />
+    <Compile Include="Service\BuildingService.cs" />
+    <Compile Include="Service\DepartmentService.cs" />
+    <Compile Include="Service\FacultyService.cs" />
+    <Compile Include="Service\GroupService.cs" />
+    <Compile Include="Service\TeacherDeparnmentService.cs" />
+    <Compile Include="Service\TeacherService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="Avndb\AvnDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AvnDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Avndb\AvnDB.edmx.diagram">
+      <DependentUpon>AvnDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Avndb\AvnDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AvnDB.edmx</DependentUpon>
+      <LastGenOutput>AvnDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Avndb\AvnDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AvnDB.edmx</DependentUpon>
+      <LastGenOutput>AvnDB.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
