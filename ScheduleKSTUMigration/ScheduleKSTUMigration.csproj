@@ -4538,6 +4538,7 @@
     <Compile Include="ScheduleDB\semester.cs" />
     <Compile Include="ScheduleDB\Semesters.cs" />
     <Compile Include="ScheduleDB\Subject.cs" />
+    <Compile Include="ScheduleDB\SubjectDepartment.cs" />
     <Compile Include="ScheduleDB\SubjectType.cs" />
     <Compile Include="ScheduleDB\SubjectWithType.cs" />
     <Compile Include="ScheduleDB\sysdiagram.cs" />
@@ -4554,6 +4555,7 @@
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\FacultyService.cs" />
     <Compile Include="Service\GroupService.cs" />
+    <Compile Include="Service\SubjectService.cs" />
     <Compile Include="Service\TeacherDeparnmentService.cs" />
     <Compile Include="Service\TeacherService.cs" />
   </ItemGroup>
