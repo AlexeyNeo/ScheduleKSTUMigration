@@ -12,17 +12,23 @@ namespace ScheduleKSTUMigration.ScheduleDB
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SubjectType()
         {
-            SubjectWithTypes = new HashSet<SubjectWithType>();
+            Raschasovkas = new HashSet<Raschasovka>();
+            Schedules = new HashSet<Schedule>();
         }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public byte Id { get; set; }
 
-        [Required]
-        [StringLength(30)]
+        [StringLength(10)]
         public string Name { get; set; }
 
+        [StringLength(40)]
+        public string FullName { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SubjectWithType> SubjectWithTypes { get; set; }
+        public virtual ICollection<Raschasovka> Raschasovkas { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Schedule> Schedules { get; set; }
     }
 }

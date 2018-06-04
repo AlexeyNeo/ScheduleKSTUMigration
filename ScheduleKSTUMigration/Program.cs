@@ -22,10 +22,12 @@ namespace ScheduleKSTUMigration
             //departmentService.Migration().Wait();
             //AuditoriumService auditoriumServise = new AuditoriumService();
             //auditoriumServise.Migration().Wait();
-            TeacherService teacherService = new TeacherService();
-            teacherService.Migration().Wait();
+            //TeacherService teacherService = new TeacherService();
+            //teacherService.Migration().Wait();
             //GroupService groupService = new GroupService();
             //groupService.Migration().Wait();
+            SubjectService subjectService = new SubjectService();
+            subjectService.Migration().Wait();
 
         }
     }

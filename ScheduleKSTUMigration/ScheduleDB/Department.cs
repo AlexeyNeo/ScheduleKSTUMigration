@@ -15,7 +15,7 @@ namespace ScheduleKSTUMigration.ScheduleDB
             Auditoriums = new HashSet<Auditorium>();
             Groups = new HashSet<Group>();
             Raschasovkas = new HashSet<Raschasovka>();
-            Subjects = new HashSet<Subject>();
+            SubjectDepartments = new HashSet<SubjectDepartment>();
             TeacherDepartments = new HashSet<TeacherDepartment>();
         }
 
@@ -43,7 +43,7 @@ namespace ScheduleKSTUMigration.ScheduleDB
         public virtual ICollection<Raschasovka> Raschasovkas { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Subject> Subjects { get; set; }
+        public virtual ICollection<SubjectDepartment> SubjectDepartments { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TeacherDepartment> TeacherDepartments { get; set; }

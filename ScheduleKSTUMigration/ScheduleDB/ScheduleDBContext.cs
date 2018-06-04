@@ -8,7 +8,7 @@ namespace ScheduleKSTUMigration.ScheduleDB
     public partial class ScheduleDBContext : DbContext
     {
         public ScheduleDBContext()
-            : base("name=ScheduleDBContext5")
+            : base("name=ScheduleDBContext6")
         {
         }
 
@@ -33,8 +33,8 @@ namespace ScheduleKSTUMigration.ScheduleDB
         public virtual DbSet<ScheduleRealization> ScheduleRealizations { get; set; }
         public virtual DbSet<Semester> Semesters { get; set; }
         public virtual DbSet<Subject> Subjects { get; set; }
+        public virtual DbSet<SubjectDepartment> SubjectDepartments { get; set; }
         public virtual DbSet<SubjectType> SubjectTypes { get; set; }
-        public virtual DbSet<SubjectWithType> SubjectWithTypes { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Teacher> Teachers { get; set; }
         public virtual DbSet<TeacherDepartment> TeacherDepartments { get; set; }
@@ -69,11 +69,6 @@ namespace ScheduleKSTUMigration.ScheduleDB
                 .WithOptional(e => e.Auditorium)
                 .HasForeignKey(e => e.ActualAuditoriumId);
 
-            modelBuilder.Entity<Auditorium>()
-                .HasMany(e => e.SubjectWithTypes)
-                .WithOptional(e => e.Auditorium)
-                .HasForeignKey(e => e.PreferAuditoriumId);
-
             modelBuilder.Entity<Course>()
                 .HasMany(e => e.CourseGroups)
                 .WithRequired(e => e.Course)
@@ -101,11 +96,6 @@ namespace ScheduleKSTUMigration.ScheduleDB
 
             modelBuilder.Entity<Department>()
                 .HasMany(e => e.Raschasovkas)
-                .WithRequired(e => e.Department)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Department>()
-                .HasMany(e => e.Subjects)
                 .WithRequired(e => e.Department)
                 .WillCascadeOnDelete(false);
 
@@ -158,23 +148,32 @@ namespace ScheduleKSTUMigration.ScheduleDB
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Subject>()
-                .HasMany(e => e.SubjectWithTypes)
+                .HasMany(e => e.Raschasovkas)
+                .WithRequired(e => e.Subject)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Subject>()
+                .HasMany(e => e.Schedules)
+                .WithRequired(e => e.Subject)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Subject>()
+                .HasMany(e => e.SubjectDepartments)
                 .WithRequired(e => e.Subject)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<SubjectType>()
-                .HasMany(e => e.SubjectWithTypes)
+                .Property(e => e.FullName)
+                .IsFixedLength();
+
+            modelBuilder.Entity<SubjectType>()
+                .HasMany(e => e.Raschasovkas)
                 .WithRequired(e => e.SubjectType)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<SubjectWithType>()
-                .HasMany(e => e.Raschasovkas)
-                .WithRequired(e => e.SubjectWithType)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<SubjectWithType>()
+            modelBuilder.Entity<SubjectType>()
                 .HasMany(e => e.Schedules)
-                .WithRequired(e => e.SubjectWithType)
+                .WithRequired(e => e.SubjectType)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Teacher>()

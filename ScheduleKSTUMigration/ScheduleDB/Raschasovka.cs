@@ -23,11 +23,7 @@ namespace ScheduleKSTUMigration.ScheduleDB
 
         public int TeacherId { get; set; }
 
-        public long SubjectWithTypeId { get; set; }
-
         public short TotalHoursForSemestr { get; set; }
-
-        public byte TotalHoursForWeek { get; set; }
 
         public short? AuditoriumId { get; set; }
 
@@ -39,6 +35,10 @@ namespace ScheduleKSTUMigration.ScheduleDB
 
         public byte YearId { get; set; }
 
+        public long SubjectId { get; set; }
+
+        public byte SubjectTypeId { get; set; }
+
         public virtual Auditorium Auditorium { get; set; }
 
         public virtual Course Course { get; set; }
@@ -49,7 +49,9 @@ namespace ScheduleKSTUMigration.ScheduleDB
 
         public virtual Semester Semester { get; set; }
 
-        public virtual SubjectWithType SubjectWithType { get; set; }
+        public virtual Subject Subject { get; set; }
+
+        public virtual SubjectType SubjectType { get; set; }
 
         public virtual Teacher Teacher { get; set; }
 

@@ -15,7 +15,6 @@ namespace ScheduleKSTUMigration.ScheduleDB
             Raschasovkas = new HashSet<Raschasovka>();
             Schedules = new HashSet<Schedule>();
             ScheduleRealizations = new HashSet<ScheduleRealization>();
-            SubjectWithTypes = new HashSet<SubjectWithType>();
         }
 
         public short Id { get; set; }
@@ -50,8 +49,5 @@ namespace ScheduleKSTUMigration.ScheduleDB
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ScheduleRealization> ScheduleRealizations { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SubjectWithType> SubjectWithTypes { get; set; }
     }
 }
